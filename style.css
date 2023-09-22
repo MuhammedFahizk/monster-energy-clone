@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}body{
+    background-color: black;
+    background-image: url(image/texture.webp);
+    color: #fff;
+    font-family: --bs-font-sans-serif;
+    
+}
+header{
+    transition: transform .408s ease-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    z-index: 9999;
+    max-width: 2400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo_con{
+    left: -20px;
+    width: 250px;
+    height: 95px;
+    
+    position: absolute;
+    background-color: #171717;;
+-webkit-transform: skew(-13deg);
+-moz-transform: skew(20deg);
+-o-transform: skew(10deg);
+-ms-transform: skew(20deg);
+}
+.imglogo{
+    width: 160px;
+    height: 80px;
+padding:10px 50px;
+ -webkit-transform: skew(13deg);
+-moz-transform: skew(20deg);
+-o-transform: skew(-20deg);
+-ms-transform: skew(-20deg);
+
+    
+}
+nav{
+    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000;
+    /* width: 300px; */
+    height: 80px;
+    
+}nav .f1 {
+    display: inline;
+    list-style: none;
+    margin:25px 300px;
+    align-items: center;
+    
+}
+nav .f1 li{
+     display: inline;
+    list-style: none;
+    margin:0px 20px;
+    
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px; /* Use "font-size" instead of "size" */
+    position: relative;
+    font-family: "Teko SemiBold",sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 1.5rem 1.3rem;
+    font-weight: 600;
+    line-height: 24px;
+    background-color: rgba(255,255,255,0);
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width: 70; /* Start with a width of 0 */
+    height: 5px;
+    background:aqua;
+    position: absolute;
+    left: 15px;
+    bottom: -8px;
+    transition: width 0.2s; /* Use "width" for the transition property */
+}
+
+nav ul li a:hover::after {
+    width: 70%;
+           -webkit-transform: skew(-20deg); -moz-transform: skew(20deg); -o-transform: skew(20deg); background:linear-gradient(to top,#22bb39 0%,#bfec1d 100%);;
+    /* Increase the width to 100% on hover */
+    /* align-items: center; */
+}
+.language{
+    width: 30px;
+    height: 80px;
+    background-color: #000;
+    padding:0px 50px;
+    margin-left: 800px;
+    margin-top: -50px;
+
+
+    
+}
+.language nav{
+    width: 70px;
+    background-color: #000;
+    border-left: 1px solid #eb0c0c;
+        transform: skew(-15deg);
+}
+/* .............nav end..................... */
+
+/* ............header.................. */
+.scroll-wrapper {
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: auto;
+    overflow-x:none;
+ 
+
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+.headerimage{
+width: 100%;
+overflow-x:scroll;
+white-space: nowrap;
+position: relative;
+display: inline-block;
+}
+.headerimage img{
+    max-width: 100%;
+    position: relative;
+}
+
+
+
+.image_item{
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 20px;
+    transition: transform .10s ease-in-out;
+
+}
+.image_item img{
+    box-sizing: border-box;
+    width: 1220px;
+    
+
+}
+.readmore {
+    position: absolute;
+    top: 80%;
+    background-color: #000;
+    left: 5%;}
+
+.readmore  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.readmore p{
+    max-width: 250px;
+    font-family: "Proxima Nova Bold",sans-serif;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+
+}
+.bt{
+    width: 90px;
+    height: 30px;
+    background: -webkit-linear-gradient(left,#22bb39 0%,#bfec1d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22bb39",endColorstr="#bfec1d",GradientType=1);
+    text-shadow: 0 0 5px rgba(0,0,0,.75);
+    display: inline-block;
+    padding: 10px 25px 5px;
+    color: #fff;
+    font-family: "Teko SemiBold",sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    transform: skew(-15deg);
+    margin-top: -10px;
+    margin-left: 20px;
+    
+    
+}
+.readmore .box :hover{
+    background: -webkit-linear-gradient(left, #bfec1d 0%,#22bb39 100%);
+}
+
+
+.bt p{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22bb39",endColorstr="#bfec1d",GradientType=1);
+    text-shadow: 0 0 5px rgba(0,0,0,.75);
+    display: inline-block;
+    padding: -10px -25px 5px;
+    color: #fff;
+    font-family: "Teko SemiBold",sans-serif;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    transform: skew(15deg);
+    margin-left: -14px;
+    
+}
+
+
+/* .............header.end.............. */
+
+/* ............second page............... */
+.second{
+    background-color: #000;
+    width: 100%;
+    height:900px ;
+    padding: 100px 0 100px 5px;
+}
+.second h1{
+    text-align: center;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #fff;
+    font-family: "Teko SemiBold",sans-serif;
+    font-weight: 900;
+}
+
+.line{
+    padding: 100px 0 100px 5px;
+
+}
