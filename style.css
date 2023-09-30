@@ -3,11 +3,24 @@
     margin: 0;
 }body{
     background-color: black;
-    background-image: url(image/texture.webp);
+    /* background-image: url(image/texture.webp); */
     color: #fff;
     font-family: --bs-font-sans-serif;
     
 }
+@font-face {
+    font-family: 'Teko';
+    src: url('Teko-VariableFont_wght.ttf') format('woff2'),
+         url('static/Teko-Bold.ttf') format('truetype'),
+         url('static/Teko-Light.ttf') format('truetype'),
+         url('static/Teko-Medium.ttf') format('truetype'),
+         url('static/Teko-Regular.ttf') format('truetype'),
+         url('static/Teko-SemiBold.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
 header{
     transition: transform .408s ease-out;
     position: fixed;
@@ -51,12 +64,12 @@ nav{
     justify-content: space-between;
     background-color: #000;
     /* width: 300px; */
-    height: 80px;
+    height: 90px;
     
 }nav .f1 {
     display: inline;
     list-style: none;
-    margin:25px 300px;
+    margin:35px 400px;
     align-items: center;
     
 }
@@ -70,17 +83,15 @@ nav .f1 li{
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px; /* Use "font-size" instead of "size" */
-    position: relative;
     font-family: "Teko SemiBold",sans-serif;
     font-size: 1.3rem;
     text-transform: uppercase;
-    padding: 1.5rem 1.3rem;
+    padding: 0.5rem 1rem;
     font-weight: 600;
     line-height: 24px;
     background-color: rgba(255,255,255,0);
-    position: relative;
-}
+    position: relative;}
+
 nav ul li a::after {
     content: '';
     width: 70; /* Start with a width of 0 */
@@ -94,7 +105,7 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 70%;
-           -webkit-transform: skew(-20deg); -moz-transform: skew(20deg); -o-transform: skew(20deg); background:linear-gradient(to top,#22bb39 0%,#bfec1d 100%);;
+    -webkit-transform: skew(-20deg); -moz-transform: skew(20deg); -o-transform: skew(20deg); background:linear-gradient(to top,#22bb39 0%,#bfec1d 100%);;
     /* Increase the width to 100% on hover */
     /* align-items: center; */
 }
@@ -102,7 +113,7 @@ nav ul li a:hover::after {
     width: 30px;
     height: 80px;
     background-color: #000;
-    padding:0px 50px;
+    padding:0px 0px;
     margin-left: 800px;
     margin-top: -50px;
 
@@ -112,7 +123,7 @@ nav ul li a:hover::after {
 .language nav{
     width: 70px;
     background-color: #000;
-    border-left: 1px solid #eb0c0c;
+    border-left: 1px solid #fcfafa;
         transform: skew(-15deg);
 }
 /* .............nav end..................... */
@@ -230,11 +241,574 @@ display: inline-block;
     text-transform: uppercase;
     margin-bottom: 60px;
     color: #fff;
+    word-spacing: o.5rem;
     font-family: "Teko SemiBold",sans-serif;
     font-weight: 900;
+
+
+
 }
 
 .line{
     padding: 100px 0 100px 5px;
 
+}
+
+.drinkimage{
+    margin-left: 300px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+.box1{
+    width: 220px;
+    height: 280px;
+    margin-top: 84px;
+    transition: 0.5s;
+
+}
+.box2{
+    width: 220px;
+    height: 300px;
+    margin-top: 84px;
+    transition: 0.5s;
+
+
+    }
+.drinkimage img{
+    width: 90px;
+    height: 220px;
+    margin-left: 150px;
+    padding-top: 24px;
+}
+.drinkimage .box1:hover{
+    margin-top: 44px;
+}
+.drinkimage .box2:hover{
+    margin-top: 24px;
+}
+.allprodect{
+    width: 170.396px;
+    height: 47.531px;
+    background-color: #000;
+    margin-top: 60px;
+    margin-left: 500px;
+    -webkit-transform: skew(-13deg);
+    border: 1px solid #51585e;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+
+
+}
+.sbox{
+    width: 7.396px;
+    height: 7.531px;
+    background-color: #22bb39;
+    margin-top: 40px;
+
+}
+.allprodect:hover{
+    border: 1px solid #22bb39;
+
+}
+.allprodect div.left{
+    width: 5.396px;
+    height: 47.531px;
+    background-color: #22bb39;
+}
+.allprodect a{
+    font-family: "Teko Medium",sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding: 10px 20px 5px;
+    /* border: 1px solid #636363; */
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.trend{
+    width: 1272px;
+    height: 899px;
+    background-image: url(image/trending-bg.webp);
+    position: relative;
+}
+.trend h1{
+    color: #fff;
+    font-family: "Teko",sans-serif;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    
+
+}.sub{
+    margin-top: -60px;
+    
+}
+.sub center{
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+.trend h3{
+    color: #b6b6b6;
+    font-family: "Teko Medium",sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    margin-left: 500px;
+}
+.trend svg{
+    fill: #CD201F;
+    width: 29.250px;
+    height: 26px;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+.vedios{
+    width: 1212px;
+    height: 550px;
+    background-image: url(image/trending-bg.webp);
+}
+.allvedios{
+    margin-top:150px;
+    margin-left: -0px;
+
+}
+.vbox{
+    margin-left: 25px;
+    
+}
+.news{
+    background-image: url(image/latest-bg.webp);
+    width: 1272px;
+    height: 746px;
+    margin-top: 10px;
+}
+.popup{
+    width: 580px;
+    height: 96px;
+    background: #202020;
+    max-width: 700px;
+    padding: 30px 60px;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    bottom: 80px;}
+    .popup p{
+        color: #fff;
+        font-size: 2rem;
+        font-family: "Teko Medium",sans-serif;
+        text-transform: uppercase;
+    }
+    .popup:hover{
+        display: none;
+    }
+    .newshed {
+        font-family: "Teko",sans-serif;
+        font-size: 4.5rem;
+        margin-top: -25px;
+        height: 45px;
+        font-weight: 500;
+        text-align: center;
+        margin-left: 400px;
+        width: 400px;
+        vertical-align: middle;
+        padding: 0 10px;
+        color: #f12929;
+        background-color: #000;
+    
+        border-right: 1px solid #51585e;
+        border-left: 1px solid #51585e;
+
+    }
+    .newshed h1{
+        font-family: "Teko",sans-serif;
+        font-size: 4.5rem;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        vertical-align: middle;
+        font-weight: 500;
+        margin-top: 15px;
+        line-height: 25px;
+    
+    }
+    .newss{
+        width: 1200px;
+        height: 1250px;
+        border: 1px solid #51585e;
+        margin-left: 30px;
+        margin-top: 200px;
+           
+    }
+    .newss .boxes{
+        width: 1140px;
+        height: 400px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #000;
+    }
+    .newss section img{
+        width: 575px;
+        height: 400px;
+    }
+    .newss .boxes .right{
+        padding: 30px;
+    }
+    .newss .boxes .right h4{
+        font-family: "Teko",sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #6bd41a;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    }
+    .newss .boxes .right h2{
+        color: #fff;
+        font-family:sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+    .newss .boxes .right a{
+        text-decoration: none;
+    }
+    .newss .boxes .right p{
+        color: #b6b6b6;
+        font-family: "Proxima Nova Regular",sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 140px;
+    
+    }
+    .newss .boxes .right h3{
+        color: #b6b6b6;
+        font-family: "Proxima Nova Regular",sans-serif;
+        font-weight: 600;
+margin-bottom: 30px;       
+ left: 30px;
+    }
+    .newss .boxes .right span{
+        color: #6bd41a;
+
+    }
+    .newss .boxes .right .middle{
+        margin-bottom: 120px;
+    }
+    .newss .boxes .right .last{
+        margin-bottom: 90px;
+    }
+    .lbox{
+        margin-left: 550px;
+    width:135px ;
+    }
+    .hash{
+        width: 1272px;
+        height: 137px;
+    }
+    .hash h1{
+        font-family: "Teko",sans-serif;
+        text-align: center;
+        letter-spacing: 8px;
+        font-size: 2.5rem;
+        color: #808080;
+        margin-top: 50px;
+    }
+    .bottile{
+        margin-top: 0px;
+        width: 1272px;
+        height: 677px;
+        background-image: url(image/cta-desktop.webp);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: absolute;
+
+
+    }
+    .bottile img{
+        width: 260px;
+        height: 670px;margin-left: 210px;
+        margin-top: 100px;
+        
+       
+    }
+    .bottile h1{
+        color: #fff;
+        font-family: "Teko",sans-serif;
+        letter-spacing: 5px;
+        line-height: 85px;
+        font-size: 6rem;
+        text-transform: uppercase;
+        margin: 30px 0;
+        font-weight: 400;
+        margin-right: 200px;
+        margin-top: 150px;
+    
+    }
+.bottile h2{
+    font-family: "Teko",sans-serif;
+    letter-spacing: 5px;
+    line-height: 85px;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #22bb39;
+    margin-top: -30px;
+    margin-left: 5px;
+
+}
+.bottile p{
+    color: #fff;
+    font-family:sans-serif;
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin: 30px 0;
+    margin-left: 10px;
+
+}
+.bottile a .prodect{
+    width: 60px;
+    height: 28px;
+    transform: skew(-15deg);
+    text-shadow: 0 0 5px rgba(0,0,0,.75);
+    display: inline-block;
+    padding: 10px 25px 5px;
+    color: #fff;
+    font-family: "Teko",sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    margin-left: 10px;
+    background: linear-gradient(to right,#22bb39 0%,#bfec1d 100%);
+}
+.bottile .prodect p{
+    transform: skew(15deg);
+    text-shadow: 0 0 5px rgba(0,0,0,.75);
+    display: inline-block;
+    padding: 10px 25px 5px;
+    color: #fff;
+    font-family: "Teko",sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    margin-left: -25px;
+    margin-top: -20px;
+
+}
+.upcome{
+    width: 956px;
+    height: 807px;
+    padding-left: 121px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom:1px solid #808080;
+
+    padding-right: 121px;
+    
+}
+
+.upcome h1{
+    color: #fff;
+    font-family: "Teko",sans-serif;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    margin-top: -160px;
+}
+.rotatetext{
+    width: 28px;
+    height: 266px;
+    letter-spacing: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    /* filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); */
+    color: #fff;
+    font-family: "Teko Medium",sans-serif;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    transform: rotate(90deg);
+    margin-left: -180px;
+    margin-top: 110px;
+
+
+    text-orientation: upright;
+}
+span.event{
+    display: inherit;
+    transform: rotate(-180deg);
+    width: 15px;
+    height: 15px;
+    letter-spacing: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+.green{
+    color: #22bb39;
+}
+.moto{
+    border: 1px solid #808080;
+    
+    width: 450px;
+    height: 240px;
+    background-color: #22bb39;
+    background-image: url(image/5ef7b375-78d9-4543-acf9-b5629825ffff.webp);
+    
+}
+.moto a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.moto a.grid{
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+.moto h3{
+    color: #fff;
+    font-family: "Teko Medium",sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    
+    margin-bottom: 10px;
+    margin-top: 140px;
+    margin-left: -250px;
+
+}
+.moto h1{
+    color: #fff;
+    font-family: "Teko",sans-serif;
+    text-transform: uppercase;
+    line-height: 40px;
+    max-width: 350px;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-left: 280px;
+}
+.moto svg{
+    fill:#51585e;
+    height: 25px;
+    right: 30px;
+    margin-top: 15px;
+    bottom: 15px;
+    margin-left: 10px;
+}
+.minboxc{
+    margin-left: -500px;
+}
+.minboxc .allprodect{
+    width: max-content;
+}
+.polygone{
+    width: 1277px;
+    height: 100px;
+    clip-path: polygon(100% 0%,0% 100%,100% 100%);
+    background-color: #000;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    z-index: 5;
+}
+.footer{
+    width:1272px;
+    height:400px;
+    background-color: #000;
+    margin-top: 725px;
+    position: absolute;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+.footer div{
+    width:max-content ;
+    height:700px ;
+    padding: 10px;
+    /* background-color: #CD201F; */
+    
+}
+.footer .logs{
+    width: 380px;
+    height:700px ;
+    padding: 10px;
+}
+.amr{
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.footer h5{
+    margin-top: 20px;
+    color: #808080;
+    font-family: "Proxima Nova Regular",sans-serif;
+    font-size: 12px;
+}
+.footer h2{
+    color: #fff;
+    font-family: "Proxima Nova Bold",sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.footer h3{
+    color: #b6b6b6;
+    font-family:sans-serif;
+    display: table;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+}
+.footer a{
+    text-decoration: none;
+    color: #b6b6b6;
+}
+div.round{
+    width: 20px;
+    display: inline-block;
+    height: 24px;
+    border: 1px solid #fff;
+    padding: 3px 8px 7px;
+    border-radius:100% ;
+    margin-top: 0.5px;}
+    div.roundd{
+        width: 20px;
+        height: 24px;
+        border: 1px solid #fff;
+        padding: 3px 8px 7px;
+        border-radius:100% ;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .footer p{
+        color: #b6b6b6;
+    font-family: sans-serif;
+    font-size: 13px;
+
+    }
+.footer svg{
+    margin-top: 5px;
+    fill: #fff;
+    color: #fff;
+}
+.social{
+    width :1860px;
+
+}
+.lst{
 }
